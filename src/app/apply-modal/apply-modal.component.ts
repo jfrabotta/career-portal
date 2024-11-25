@@ -155,7 +155,7 @@ export class ApplyModalComponent implements OnInit {
     ];
     this.resume = new FileControl({
       key: 'resume',
-      required: true,
+      required: false,
       hidden: false,
       description: `${this.translate.instant('ACCEPTED_RESUME')} ${SettingsService.settings.acceptedResumeTypes.toString()}`,
     });
