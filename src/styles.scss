@@ -3,17 +3,17 @@
 
 app-job-list {
   novo-loading {
-  position: absolute;
-  top: 50%;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
 body {
   overflow: hidden;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 novo-file-input {
@@ -21,15 +21,15 @@ novo-file-input {
 }
 
 app-job-list {
-  novo-list>div>novo-list-item   {
+  novo-list > div > novo-list-item {
     border-bottom: unset;
 
     div.list-item {
-      item-content i{
-       color: #4a89dc;
+      item-content i {
+        color: #4a89dc;
       }
-      >item-header item-title {
-        >h6 {
+      > item-header item-title {
+        > h6 {
           color: #4a89dc;
         }
       }
@@ -61,9 +61,17 @@ novo-search {
   }
 }
 
-app-job-details novo-card header{
+.novo-header {
+  background-color: #c9474b !important;
+  .header-logo {
+    max-width: 150px;
+    padding: 1em;
+  }
+}
+
+app-job-details novo-card header {
   padding: 10px 20px 10px 20px !important;
-  background-color: #BB5566;
+  background-color: #bb5566;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -82,10 +90,10 @@ app-job-details novo-card header{
   }
 }
 
-.header{
-  >header {
+.header {
+  > header {
     h1 {
-      color: #D9DADC;
+      color: #d9dadc;
     }
   }
 }
@@ -94,6 +102,10 @@ app-job-details novo-card header{
   p {
     max-width: 100em;
   }
+}
+
+header[theme] > section {
+  display: none;
 }
 
 app-sidebar {
@@ -105,38 +117,38 @@ app-sidebar {
     overflow-y: auto;
     overflow-x: hidden;
     &::-webkit-scrollbar {
-      background-color:#fff;
-      height:4px;
+      background-color: #fff;
+      height: 4px;
       width: 4px;
     }
     &::-webkit-scrollbar-track {
-      background-color:#fff
+      background-color: #fff;
     }
     &::-webkit-scrollbar-thumb {
-      background-color:#babac0;
-      border-radius:4px;
+      background-color: #babac0;
+      border-radius: 4px;
     }
     label {
-      color: #2F384F !important;
+      color: #2f384f !important;
       font-weight: 600;
     }
   }
 }
 
 app-main-page {
-  >novo-loading {
-  position: absolute;
-  top: 50%;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  > novo-loading {
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
 app-apply-modal {
   novo-form {
     form {
-      div.consent-form{
+      div.consent-form {
         display: flex;
         novo-control.checkbox {
           width: 50px;
@@ -163,7 +175,8 @@ app-apply-modal {
       }
     }
   }
-  novo-modal > footer, novo-notification > footer {
+  novo-modal > footer,
+  novo-notification > footer {
     flex-flow: column-reverse !important;
     button {
       width: 90%;
@@ -171,5 +184,3 @@ app-apply-modal {
     }
   }
 }
-
-
