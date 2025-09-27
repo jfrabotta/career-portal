@@ -40,6 +40,7 @@ novo-list {
         }
     }
     novo-list-item  {
+      align-items: center;
       item-content {
         span, b {
           color: rgba(67, 67, 67, 0.65);
@@ -93,8 +94,13 @@ novo-list {
       margin: 12px 15px;
       novo-list-item {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        item-header {
+          margin-bottom: 10px;
+        }
         item-header-end {
+          margin-left: -3px;
           display: flex;
           flex-wrap: wrap;
           .mid-card {
